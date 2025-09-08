@@ -1,0 +1,39 @@
+
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+// Function to attempt brute force cracking
+func bruteForceCrack(password string, charset string) string {
+	// Start with an empty string
+	guess := make([]byte, len(password))
+
+	// Try all combinations
+		for {
+		for i := 0; i < len(password); i++ {
+			// Loop through each character in the charset
+			for _, c := range charset {
+				guess[i] = byte(c)
+				if string(guess) == password {
+					return string(guess)
+				}
+			}
+		}
+	}
+}
+
+func main() {
+	// Target password to crack
+	password := "abc"
+
+	// Charset to use in brute force
+	charset := "abcdefghijklmnopqrstuvwxyz" // Lowercase letters only
+
+	// Try cracking the password
+	crackedPassword := bruteForceCrack(password, charset)
+
+	fmt.Println("Cracked Password:", crackedPassword)
+}

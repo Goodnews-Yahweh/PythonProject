@@ -1,0 +1,22 @@
+
+# Strings => ordered, immutable collection datatype, for txt representation.
+# one most used datatype in Python
+
+string:str = "Hello, World"
+my_string = 'Hi, World'
+my_str = """Hey
+Whatsup doc? """
+
+my_strin = """Hey, again \
+howdy? """
+
+print(string)
+print(my_string)
+print(my_str)
+print(my_strin)
+print()
+
+#accessing the characters in a string
+# by index
+char:str = my_string[-1]
+print(char)

@@ -1,0 +1,25 @@
+{
+    "conversations": [
+        {
+            "timestamp": "2025-05-12 10:39:41",
+            "user_input": "bye",
+            "bot_response": "Goodbye! Come back soon!"
+        },
+        {
+            "timestamp": "2025-05-12 10:39:57",
+            "user_input": "hu",
+            "bot_response": "I don't know how to respond to that. You can teach me using 'learn <input>: <response>'."
+        },
+        {
+            "timestamp": "2025-05-12 10:40:00",
+            "user_input": "hi",
+            "bot_response": "Hey there! What's up?"
+        },
+        {
+            "timestamp": "2025-05-12 10:40:09",
+            "user_input": "how are you",
+            "bot_response": "I'm doing great, thanks for asking! How about you?"
+        }
+    ],
+    "learned_responses": {}
+}
